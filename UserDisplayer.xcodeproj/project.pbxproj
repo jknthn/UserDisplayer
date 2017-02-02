@@ -11,7 +11,7 @@
 		76B93C561E439761007F16A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C551E439761007F16A8 /* ViewController.swift */; };
 		76B93C591E439761007F16A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B93C571E439761007F16A8 /* Main.storyboard */; };
 		76B93C5B1E439761007F16A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76B93C5A1E439761007F16A8 /* Assets.xcassets */; };
-		76B93C5E1E439761007F16A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B93C5C1E439761007F16A8 /* LaunchScreen.storyboard */; };
+		76B93C681E439FD3007F16A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76B93C661E439FD3007F16A8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +20,8 @@
 		76B93C551E439761007F16A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76B93C581E439761007F16A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76B93C5A1E439761007F16A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76B93C5D1E439761007F16A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76B93C5F1E439761007F16A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76B93C671E439FD3007F16A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,54 @@
 		76B93C521E439761007F16A8 /* UserDisplayer */ = {
 			isa = PBXGroup;
 			children = (
-				76B93C531E439761007F16A8 /* AppDelegate.swift */,
-				76B93C551E439761007F16A8 /* ViewController.swift */,
-				76B93C571E439761007F16A8 /* Main.storyboard */,
-				76B93C5A1E439761007F16A8 /* Assets.xcassets */,
-				76B93C5C1E439761007F16A8 /* LaunchScreen.storyboard */,
-				76B93C5F1E439761007F16A8 /* Info.plist */,
+				76B93C691E43A074007F16A8 /* UI */,
+				76B93C651E439F0A007F16A8 /* Supporting Files */,
 			);
 			path = UserDisplayer;
+			sourceTree = "<group>";
+		};
+		76B93C651E439F0A007F16A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B93C571E439761007F16A8 /* Main.storyboard */,
+				76B93C5F1E439761007F16A8 /* Info.plist */,
+				76B93C661E439FD3007F16A8 /* LaunchScreen.storyboard */,
+				76B93C5A1E439761007F16A8 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76B93C691E43A074007F16A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				76B93C6C1E43A091007F16A8 /* AppDelegate */,
+				76B93C6B1E43A089007F16A8 /* Views */,
+				76B93C6A1E43A081007F16A8 /* Connectors */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		76B93C6A1E43A081007F16A8 /* Connectors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Connectors;
+			sourceTree = "<group>";
+		};
+		76B93C6B1E43A089007F16A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76B93C551E439761007F16A8 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		76B93C6C1E43A091007F16A8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				76B93C531E439761007F16A8 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B93C5E1E439761007F16A8 /* LaunchScreen.storyboard in Resources */,
+				76B93C681E439FD3007F16A8 /* LaunchScreen.storyboard in Resources */,
 				76B93C5B1E439761007F16A8 /* Assets.xcassets in Resources */,
 				76B93C591E439761007F16A8 /* Main.storyboard in Resources */,
 			);
@@ -153,10 +193,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		76B93C5C1E439761007F16A8 /* LaunchScreen.storyboard */ = {
+		76B93C661E439FD3007F16A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76B93C5D1E439761007F16A8 /* Base */,
+				76B93C671E439FD3007F16A8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -261,8 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = S22AEPX323;
-				INFOPLIST_FILE = UserDisplayer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UserDisplayer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.apps.UserDisplayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,8 +315,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = S22AEPX323;
-				INFOPLIST_FILE = UserDisplayer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/UserDisplayer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.apps.UserDisplayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
