@@ -40,7 +40,6 @@ class ShowUserListUseCaseTests: XCTestCase {
     }
     
     
-    
     // MARK: - Mocks
     
     class EntityGatewayMock: EntityGateway {
