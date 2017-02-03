@@ -9,5 +9,5 @@
 import Foundation
 
 protocol UserListView: class {
-    
+    func refresh()
 }

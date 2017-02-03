@@ -12,4 +12,17 @@ class UserListPresenter {
     
     weak var view: UserListView!
     
+    private let useCaseFactory: UseCaseFactory
+    
+    // MARK: - Initialization
+    
+    init(useCaseFactory: UseCaseFactory) {
+        self.useCaseFactory = useCaseFactory
+    }
+    
+    // MARK: - Public
+    
+    func viewReady() {
+        
+    }
 }

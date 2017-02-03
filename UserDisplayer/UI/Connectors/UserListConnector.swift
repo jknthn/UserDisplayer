@@ -21,7 +21,8 @@ class UserListConnector: Connector {
     // MARK: - Connector
     
     func createInitialController() -> UIViewController {
-        let presenter = UserListPresenter()
+        let factory = UseCaseFactory(entityGateway: entityGateway)
+        let presenter = UserListPresenter(useCaseFactory: factory)
         let viewController = UserListViewController(presenter: presenter, connector: self)
         presenter.view = viewController
         let navigationController = UINavigationController(rootViewController: viewController)
