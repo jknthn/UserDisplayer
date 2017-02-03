@@ -5,6 +5,8 @@
 2. `Storyboards` and `xib`s will not be used, all views will be written from code
 3. No external libraries will be used
 
+NOTE: Clean Architecture is overkill for such project, wanted to showcase what I am currently into.
+
 
 ## 2. Clean architecture
 This project is written with Clean Architecture principles I am really into. Here are some links about general concept of it to those unfamiliar :
