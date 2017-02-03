@@ -27,6 +27,8 @@
 		76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */; };
 		76E19FBD1E450DF200FE82AB /* ShowUserListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */; };
 		76E19FC01E4510CD00FE82AB /* UserDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */; };
+		76E19FC21E45147800FE82AB /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC11E45147800FE82AB /* User+Mock.swift */; };
+		76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactoryTests.swift; sourceTree = "<group>"; };
 		76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUserListUseCaseTests.swift; sourceTree = "<group>"; };
 		76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDisplayData.swift; sourceTree = "<group>"; };
+		76E19FC11E45147800FE82AB /* User+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
+		76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDisplayData+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				76E19FB01E4508D500FE82AB /* Info.plist */,
+				76E19FC11E45147800FE82AB /* User+Mock.swift */,
+				76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -416,8 +422,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */,
 				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,
 				76E19FAF1E4508D500FE82AB /* UserDisplayerTests.swift in Sources */,
+				76E19FC21E45147800FE82AB /* User+Mock.swift in Sources */,
 				76E19FBD1E450DF200FE82AB /* ShowUserListUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
