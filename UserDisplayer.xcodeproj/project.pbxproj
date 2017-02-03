@@ -16,6 +16,7 @@
 		76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C761E43A30C007F16A8 /* UserListView.swift */; };
 		76B93C9F1E44E965007F16A8 /* EntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C9E1E44E965007F16A8 /* EntityGateway.swift */; };
 		76B93CA21E44E991007F16A8 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CA11E44E991007F16A8 /* Connector.swift */; };
+		76B93CA51E44EC6F007F16A8 /* InMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CA41E44EC6F007F16A8 /* InMemoryRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		76B93C761E43A30C007F16A8 /* UserListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		76B93C9E1E44E965007F16A8 /* EntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityGateway.swift; sourceTree = "<group>"; };
 		76B93CA11E44E991007F16A8 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		76B93CA41E44EC6F007F16A8 /* InMemoryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		76B93C521E439761007F16A8 /* UserDisplayer */ = {
 			isa = PBXGroup;
 			children = (
+				76B93CA31E44EC5E007F16A8 /* Data */,
 				76B93C9D1E44E956007F16A8 /* Domain */,
 				76B93C6D1E43A26D007F16A8 /* Presentation */,
 				76B93C691E43A074007F16A8 /* UI */,
@@ -156,6 +159,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		76B93CA31E44EC5E007F16A8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				76B93CA41E44EC6F007F16A8 /* InMemoryRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,6 +242,7 @@
 				76B93C731E43A2F3007F16A8 /* UserListConnector.swift in Sources */,
 				76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */,
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
+				76B93CA51E44EC6F007F16A8 /* InMemoryRepository.swift in Sources */,
 				76B93C751E43A303007F16A8 /* UserListPresenter.swift in Sources */,
 				76B93C711E43A2E9007F16A8 /* UserListViewController.swift in Sources */,
 				76B93CA21E44E991007F16A8 /* Connector.swift in Sources */,

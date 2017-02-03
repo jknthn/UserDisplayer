@@ -10,6 +10,16 @@ import UIKit
 
 class UserListConnector: Connector {
     
+    private let entityGateway: EntityGateway
+    
+    // MARK: - Initialization
+    
+    init(entityGateway: EntityGateway) {
+        self.entityGateway = entityGateway
+    }
+    
+    // MARK: - Connector
+    
     func createInitialController() -> UIViewController {
         let presenter = UserListPresenter()
         let viewController = UserListViewController(presenter: presenter, connector: self)
