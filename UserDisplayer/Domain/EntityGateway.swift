@@ -9,5 +9,5 @@
 import Foundation
 
 protocol EntityGateway {
-    
+    func getUsers(completion: @escaping ([User]) -> Void)
 }
