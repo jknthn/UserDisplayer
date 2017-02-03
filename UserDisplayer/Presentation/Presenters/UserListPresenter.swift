@@ -10,9 +10,14 @@ import Foundation
 
 class UserListPresenter {
     
-    weak var view: UserListView!
+    weak var view: UserListView?
+    
+    var numberOfRows: Int {
+        return users.count
+    }
     
     private let useCaseFactory: UseCaseFactory
+    private var users = [User]()
     
     // MARK: - Initialization
     
@@ -23,6 +28,9 @@ class UserListPresenter {
     // MARK: - Public
     
     func viewReady() {
-        
+        useCaseFactory.create(useCase: .showUserList(completion: { users in
+            self.users = users
+            self.view?.refresh()
+        })).execute()
     }
 }

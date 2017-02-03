@@ -29,6 +29,7 @@ class UserListViewController: UITableViewController, UserListView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewReady()
     }
     
     // MARK: - UserListView
