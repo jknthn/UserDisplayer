@@ -33,4 +33,9 @@ class UserListPresenter {
             self.view?.refresh()
         })).execute()
     }
+    
+    func setup(cell: UserCell, at row: Int) {
+        cell.update(title: users[row].name)
+        cell.update(subtitle: users[row].userName)
+    }
 }

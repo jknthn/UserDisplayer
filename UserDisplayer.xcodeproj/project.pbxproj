@@ -21,6 +21,8 @@
 		76B93CAD1E44F3D5007F16A8 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CAC1E44F3D5007F16A8 /* UseCase.swift */; };
 		76B93CAF1E44F71A007F16A8 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CAE1E44F71A007F16A8 /* UseCaseFactory.swift */; };
 		76B93CB21E44F96E007F16A8 /* ShowUserListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CB11E44F96E007F16A8 /* ShowUserListUseCase.swift */; };
+		76E19FA41E45024600FE82AB /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FA31E45024600FE82AB /* UserTableViewCell.swift */; };
+		76E19FA71E45034500FE82AB /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FA61E45034500FE82AB /* ReusableIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		76B93CAC1E44F3D5007F16A8 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		76B93CAE1E44F71A007F16A8 /* UseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		76B93CB11E44F96E007F16A8 /* ShowUserListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUserListUseCase.swift; sourceTree = "<group>"; };
+		76E19FA31E45024600FE82AB /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		76E19FA61E45034500FE82AB /* ReusableIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		76B93C691E43A074007F16A8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				76E19FA51E45033C00FE82AB /* Aux */,
+				76E19FA21E45023D00FE82AB /* SupplementaryViews */,
 				76B93CA01E44E987007F16A8 /* Protocols */,
 				76B93C6C1E43A091007F16A8 /* AppDelegate */,
 				76B93C6B1E43A089007F16A8 /* Views */,
@@ -195,6 +201,22 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		76E19FA21E45023D00FE82AB /* SupplementaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FA31E45024600FE82AB /* UserTableViewCell.swift */,
+			);
+			path = SupplementaryViews;
+			sourceTree = "<group>";
+		};
+		76E19FA51E45033C00FE82AB /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FA61E45034500FE82AB /* ReusableIdentifier.swift */,
+			);
+			path = Aux;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,8 +293,10 @@
 				76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */,
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
 				76B93CAF1E44F71A007F16A8 /* UseCaseFactory.swift in Sources */,
+				76E19FA41E45024600FE82AB /* UserTableViewCell.swift in Sources */,
 				76B93CA51E44EC6F007F16A8 /* InMemoryRepository.swift in Sources */,
 				76B93CB21E44F96E007F16A8 /* ShowUserListUseCase.swift in Sources */,
+				76E19FA71E45034500FE82AB /* ReusableIdentifier.swift in Sources */,
 				76B93C751E43A303007F16A8 /* UserListPresenter.swift in Sources */,
 				76B93CAD1E44F3D5007F16A8 /* UseCase.swift in Sources */,
 				76B93CAB1E44EDDC007F16A8 /* User.swift in Sources */,

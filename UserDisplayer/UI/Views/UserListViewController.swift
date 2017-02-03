@@ -29,7 +29,26 @@ class UserListViewController: UITableViewController, UserListView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
         presenter.viewReady()
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.numberOfRows
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.identifier, for: indexPath) as! UserTableViewCell
+        presenter.setup(cell: cell, at: indexPath.row)
+        return cell
+    }
+    
+    // MARK: - Private
+    
+    func setupTableView() {
+        tableView.registerCellsWithClass(UserTableViewCell.self)
+        tableView.rowHeight = 80.0
+        tableView.tableFooterView = UIView()
     }
     
     // MARK: - UserListView
