@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias ShowUserListCompletion = ([User]) -> Void
+typealias ShowUserListCompletion = ([UserDisplayData]) -> Void
 
 class ShowUserListUseCase: UseCase {
     
@@ -25,6 +25,9 @@ class ShowUserListUseCase: UseCase {
     // MARK: - UseCase
     
     func execute() {
-        entityGateway.getUsers(completion: completion)
+        entityGateway.getUsers { users in
+            let displayData = users.map { UserDisplayData(id: $0.id, name: $0.name, userName: $0.userName) }
+            self.completion(displayData)
+        }
     }
 }

@@ -17,7 +17,7 @@ class UserListPresenter {
     }
     
     private let useCaseFactory: UseCaseFactory
-    private var users = [User]()
+    private var users = [UserDisplayData]()
     
     // MARK: - Initialization
     
@@ -29,7 +29,7 @@ class UserListPresenter {
     
     func viewReady() {
         useCaseFactory.create(useCase: .showUserList(completion: { users in
-            self.users = users
+            self.users = users.sorted()
             self.view?.refresh()
         })).execute()
     }
