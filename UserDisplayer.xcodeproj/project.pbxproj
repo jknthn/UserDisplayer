@@ -25,6 +25,7 @@
 		76E19FA71E45034500FE82AB /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FA61E45034500FE82AB /* ReusableIdentifier.swift */; };
 		76E19FAF1E4508D500FE82AB /* UserDisplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FAE1E4508D500FE82AB /* UserDisplayerTests.swift */; };
 		76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */; };
+		76E19FBD1E450DF200FE82AB /* ShowUserListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		76E19FAE1E4508D500FE82AB /* UserDisplayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDisplayerTests.swift; sourceTree = "<group>"; };
 		76E19FB01E4508D500FE82AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactoryTests.swift; sourceTree = "<group>"; };
+		76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUserListUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,8 +266,17 @@
 			isa = PBXGroup;
 			children = (
 				76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */,
+				76E19FBB1E450DE200FE82AB /* UseCases */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		76E19FBB1E450DE200FE82AB /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 			files = (
 				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,
 				76E19FAF1E4508D500FE82AB /* UserDisplayerTests.swift in Sources */,
+				76E19FBD1E450DF200FE82AB /* ShowUserListUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
