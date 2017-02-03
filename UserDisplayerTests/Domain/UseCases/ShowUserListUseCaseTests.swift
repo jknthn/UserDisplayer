@@ -18,11 +18,11 @@ class ShowUserListUseCaseTests: XCTestCase {
     // MARK: - XCTestCase
     
     override func setUp() {
+        super.setUp()
         entityGateway = EntityGatewayMock()
         useCase = ShowUserListUseCase(entityGateway: entityGateway) { users in
             self.result = users
         }
-        super.setUp()
     }
     
     override func tearDown() {
@@ -53,7 +53,6 @@ class ShowUserListUseCaseTests: XCTestCase {
         XCTAssertEqual(result[0], UserDisplayData.mock1)
         XCTAssertEqual(result[1], UserDisplayData.mock2)
     }
-    
     
     // MARK: - Mocks
     

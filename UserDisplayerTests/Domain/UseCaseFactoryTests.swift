@@ -18,10 +18,10 @@ class UseCaseFactoryTests: XCTestCase {
     // MARK: - XCTestCase
     
     override func setUp() {
+        super.setUp()
         entityGateway = EntityGatewayMock()
         useCaseFactory = UseCaseFactory(entityGateway: entityGateway)
         closureWasInvoked = false
-        super.setUp()
     }
     
     override func tearDown() {

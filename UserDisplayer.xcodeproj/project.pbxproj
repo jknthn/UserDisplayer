@@ -28,6 +28,7 @@
 		76E19FC01E4510CD00FE82AB /* UserDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */; };
 		76E19FC21E45147800FE82AB /* User+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC11E45147800FE82AB /* User+Mock.swift */; };
 		76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */; };
+		76E19FC81E45174800FE82AB /* UserListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC71E45174800FE82AB /* UserListPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDisplayData.swift; sourceTree = "<group>"; };
 		76E19FC11E45147800FE82AB /* User+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Mock.swift"; sourceTree = "<group>"; };
 		76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDisplayData+Mock.swift"; sourceTree = "<group>"; };
+		76E19FC71E45174800FE82AB /* UserListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				76E19FB71E45097F00FE82AB /* Domain */,
+				76E19FC51E45171F00FE82AB /* Presentation */,
 				76E19FB61E4508EB00FE82AB /* SupportingFiles */,
 			);
 			path = UserDisplayerTests;
@@ -291,6 +294,22 @@
 				76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */,
 			);
 			path = Aux;
+			sourceTree = "<group>";
+		};
+		76E19FC51E45171F00FE82AB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FC61E45173700FE82AB /* Presenters */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		76E19FC61E45173700FE82AB /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FC71E45174800FE82AB /* UserListPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E19FC81E45174800FE82AB /* UserListPresenterTests.swift in Sources */,
 				76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */,
 				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,
 				76E19FC21E45147800FE82AB /* User+Mock.swift in Sources */,
