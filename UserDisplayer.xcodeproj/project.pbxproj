@@ -26,6 +26,7 @@
 		76E19FAF1E4508D500FE82AB /* UserDisplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FAE1E4508D500FE82AB /* UserDisplayerTests.swift */; };
 		76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */; };
 		76E19FBD1E450DF200FE82AB /* ShowUserListUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */; };
+		76E19FC01E4510CD00FE82AB /* UserDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		76E19FB01E4508D500FE82AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactoryTests.swift; sourceTree = "<group>"; };
 		76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUserListUseCaseTests.swift; sourceTree = "<group>"; };
+		76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDisplayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				76B93C9E1E44E965007F16A8 /* EntityGateway.swift */,
 				76B93CAC1E44F3D5007F16A8 /* UseCase.swift */,
 				76B93CAE1E44F71A007F16A8 /* UseCaseFactory.swift */,
+				76E19FBE1E4510BD00FE82AB /* Aux */,
 				76B93CB01E44F961007F16A8 /* UseCases */,
 				76B93CA91E44EDD3007F16A8 /* Entities */,
 			);
@@ -277,6 +280,14 @@
 				76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		76E19FBE1E4510BD00FE82AB /* Aux */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FBF1E4510CD00FE82AB /* UserDisplayData.swift */,
+			);
+			path = Aux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E19FC01E4510CD00FE82AB /* UserDisplayData.swift in Sources */,
 				76B93C731E43A2F3007F16A8 /* UserListConnector.swift in Sources */,
 				76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */,
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
@@ -609,6 +621,7 @@
 				76E19FB51E4508D500FE82AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
