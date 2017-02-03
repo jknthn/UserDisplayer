@@ -11,11 +11,11 @@ import Foundation
 
 extension User {
     
-    static func mock1() -> User {
+    static var mock1: User {
         return User(id: 1, name: "John Doe", userName: "John123", email: "user@email.com")
     }
     
-    static func mock2() -> User {
+    static var mock2: User {
         return User(id: 2, name: "Jane Appleseed", userName: "jane_a", email: "jane@email.com")
     }
 }

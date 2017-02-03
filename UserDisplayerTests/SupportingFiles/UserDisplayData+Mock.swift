@@ -11,11 +11,11 @@ import Foundation
 
 extension UserDisplayData {
     
-    static func mock1() -> UserDisplayData {
+    static var mock1: UserDisplayData {
         return UserDisplayData(id: 1, name: "John Doe", userName: "John123")
     }
     
-    static func mock2() -> UserDisplayData {
+    static var mock2: UserDisplayData {
         return UserDisplayData(id: 2, name: "Jane Appleseed", userName: "jane_a")
     }
 }

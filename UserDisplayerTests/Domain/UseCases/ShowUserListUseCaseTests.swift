@@ -11,9 +11,9 @@ import XCTest
 
 class ShowUserListUseCaseTests: XCTestCase {
     
-    var entityGateway: EntityGateway!
+    var entityGateway: EntityGatewayMock!
     var useCase: ShowUserListUseCase!
-    var result = [User]()
+    var result = [UserDisplayData]()
     
     // MARK: - XCTestCase
     
@@ -39,6 +39,21 @@ class ShowUserListUseCaseTests: XCTestCase {
         XCTAssertEqual(result.count, 0)
     }
     
+    func testTransformOneUserToDisplayData() {
+        entityGateway.users = [User.mock1]
+        useCase.execute()
+        XCTAssertEqual(result.count, 1)
+        XCTAssertEqual(result[0], UserDisplayData.mock1)
+    }
+    
+    func testTransformTwoUsersToDisplayData() {
+        entityGateway.users = [User.mock1, User.mock2]
+        useCase.execute()
+        XCTAssertEqual(result.count, 2)
+        XCTAssertEqual(result[0], UserDisplayData.mock1)
+        XCTAssertEqual(result[1], UserDisplayData.mock2)
+    }
+    
     
     // MARK: - Mocks
     
@@ -46,6 +61,8 @@ class ShowUserListUseCaseTests: XCTestCase {
         
         var users = [User]()
         
-        func getUsers(completion: @escaping ([User]) -> Void) { }
+        func getUsers(completion: @escaping ([User]) -> Void) {
+            completion(users)
+        }
     }
 }
