@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return connector
     }()
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         setupWindow()
         return true
