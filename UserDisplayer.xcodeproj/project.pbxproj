@@ -17,6 +17,7 @@
 		76B93C9F1E44E965007F16A8 /* EntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C9E1E44E965007F16A8 /* EntityGateway.swift */; };
 		76B93CA21E44E991007F16A8 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CA11E44E991007F16A8 /* Connector.swift */; };
 		76B93CA51E44EC6F007F16A8 /* InMemoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CA41E44EC6F007F16A8 /* InMemoryRepository.swift */; };
+		76B93CAB1E44EDDC007F16A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CAA1E44EDDC007F16A8 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		76B93C9E1E44E965007F16A8 /* EntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityGateway.swift; sourceTree = "<group>"; };
 		76B93CA11E44E991007F16A8 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 		76B93CA41E44EC6F007F16A8 /* InMemoryRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryRepository.swift; sourceTree = "<group>"; };
+		76B93CAA1E44EDDC007F16A8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93C9E1E44E965007F16A8 /* EntityGateway.swift */,
+				76B93CA91E44EDD3007F16A8 /* Entities */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -165,6 +168,14 @@
 				76B93CA41E44EC6F007F16A8 /* InMemoryRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		76B93CA91E44EDD3007F16A8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				76B93CAA1E44EDDC007F16A8 /* User.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
 				76B93CA51E44EC6F007F16A8 /* InMemoryRepository.swift in Sources */,
 				76B93C751E43A303007F16A8 /* UserListPresenter.swift in Sources */,
+				76B93CAB1E44EDDC007F16A8 /* User.swift in Sources */,
 				76B93C711E43A2E9007F16A8 /* UserListViewController.swift in Sources */,
 				76B93CA21E44E991007F16A8 /* Connector.swift in Sources */,
 				76B93C9F1E44E965007F16A8 /* EntityGateway.swift in Sources */,
