@@ -15,6 +15,8 @@
 		76B93C731E43A2F3007F16A8 /* UserListConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C721E43A2F3007F16A8 /* UserListConnector.swift */; };
 		76B93C751E43A303007F16A8 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C741E43A303007F16A8 /* UserListPresenter.swift */; };
 		76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C761E43A30C007F16A8 /* UserListView.swift */; };
+		76B93C9F1E44E965007F16A8 /* EntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93C9E1E44E965007F16A8 /* EntityGateway.swift */; };
+		76B93CA21E44E991007F16A8 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B93CA11E44E991007F16A8 /* Connector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		76B93C721E43A2F3007F16A8 /* UserListConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListConnector.swift; sourceTree = "<group>"; };
 		76B93C741E43A303007F16A8 /* UserListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
 		76B93C761E43A30C007F16A8 /* UserListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		76B93C9E1E44E965007F16A8 /* EntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityGateway.swift; sourceTree = "<group>"; };
+		76B93CA11E44E991007F16A8 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		76B93C521E439761007F16A8 /* UserDisplayer */ = {
 			isa = PBXGroup;
 			children = (
+				76B93C9D1E44E956007F16A8 /* Domain */,
 				76B93C6D1E43A26D007F16A8 /* Presentation */,
 				76B93C691E43A074007F16A8 /* UI */,
 				76B93C651E439F0A007F16A8 /* Supporting Files */,
@@ -81,6 +86,7 @@
 		76B93C691E43A074007F16A8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				76B93CA01E44E987007F16A8 /* Protocols */,
 				76B93C6C1E43A091007F16A8 /* AppDelegate */,
 				76B93C6B1E43A089007F16A8 /* Views */,
 				76B93C6A1E43A081007F16A8 /* Connectors */,
@@ -135,6 +141,22 @@
 				76B93C761E43A30C007F16A8 /* UserListView.swift */,
 			);
 			path = ViewProtocols;
+			sourceTree = "<group>";
+		};
+		76B93C9D1E44E956007F16A8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				76B93C9E1E44E965007F16A8 /* EntityGateway.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		76B93CA01E44E987007F16A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				76B93CA11E44E991007F16A8 /* Connector.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +237,8 @@
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
 				76B93C751E43A303007F16A8 /* UserListPresenter.swift in Sources */,
 				76B93C711E43A2E9007F16A8 /* UserListViewController.swift in Sources */,
+				76B93CA21E44E991007F16A8 /* Connector.swift in Sources */,
+				76B93C9F1E44E965007F16A8 /* EntityGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
