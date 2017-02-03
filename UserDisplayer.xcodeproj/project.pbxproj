@@ -24,6 +24,7 @@
 		76E19FA41E45024600FE82AB /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FA31E45024600FE82AB /* UserTableViewCell.swift */; };
 		76E19FA71E45034500FE82AB /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FA61E45034500FE82AB /* ReusableIdentifier.swift */; };
 		76E19FAF1E4508D500FE82AB /* UserDisplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FAE1E4508D500FE82AB /* UserDisplayerTests.swift */; };
+		76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		76E19FAC1E4508D500FE82AB /* UserDisplayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserDisplayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E19FAE1E4508D500FE82AB /* UserDisplayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDisplayerTests.swift; sourceTree = "<group>"; };
 		76E19FB01E4508D500FE82AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFactoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 		76E19FAD1E4508D500FE82AB /* UserDisplayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				76E19FB71E45097F00FE82AB /* Domain */,
 				76E19FB61E4508EB00FE82AB /* SupportingFiles */,
 				76E19FAE1E4508D500FE82AB /* UserDisplayerTests.swift */,
 			);
@@ -255,6 +258,14 @@
 				76E19FB01E4508D500FE82AB /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		76E19FB71E45097F00FE82AB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FB81E45098C00FE82AB /* UseCaseFactoryTests.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,
 				76E19FAF1E4508D500FE82AB /* UserDisplayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +546,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = S22AEPX323;
-				INFOPLIST_FILE = UserDisplayerTests/Info.plist;
+				INFOPLIST_FILE = UserDisplayerTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.apps.UserDisplayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,7 +560,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = S22AEPX323;
-				INFOPLIST_FILE = UserDisplayerTests/Info.plist;
+				INFOPLIST_FILE = UserDisplayerTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jk.apps.UserDisplayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
