@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol Connector {
-    func createInitialController() -> UIViewController
-}
-
 class UserListConnector: Connector {
     
     func createInitialController() -> UIViewController {
