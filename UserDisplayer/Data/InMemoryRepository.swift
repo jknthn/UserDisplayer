@@ -17,10 +17,21 @@ class InMemoryRepository: EntityGateway {
         User(id: 2, name: "Jane Doe", userName: "Jane332", email: "jane@email.com"),
     ]
     
+    private let posts = [
+        Post(userId: 1, id: 1, title: "Post 1", body: "This is test body of a post 1"),
+        Post(userId: 1, id: 2, title: "Post 2", body: "This is test body of a post 2"),
+        Post(userId: 2, id: 3, title: "Post 3", body: "This is test body of a post 3"),
+        Post(userId: 2, id: 4, title: "Post 4", body: "This is test body of a post 4"),
+    ]
+    
     // MARK: - EntityGateway
     
     func getUsers(completion: @escaping ([User]) -> Void) {
         completion(users)
+    }
+    
+    func getPosts(forUserWithId id: Int, completion: @escaping ([Post]) -> Void) {
+        completion(posts.filter({ $0.id == id }))
     }
     
 }
