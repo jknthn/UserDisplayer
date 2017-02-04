@@ -32,6 +32,7 @@
 		76E19FCA1E45D01200FE82AB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC91E45D01200FE82AB /* LoadingView.swift */; };
 		76E19FCC1E45DB7100FE82AB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCB1E45DB7100FE82AB /* Post.swift */; };
 		76E19FCE1E45DC8900FE82AB /* PostDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCD1E45DC8900FE82AB /* PostDisplayData.swift */; };
+		76E19FD01E45DED300FE82AB /* ShowPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCF1E45DED300FE82AB /* ShowPostListUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		76E19FC91E45D01200FE82AB /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		76E19FCB1E45DB7100FE82AB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		76E19FCD1E45DC8900FE82AB /* PostDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDisplayData.swift; sourceTree = "<group>"; };
+		76E19FCF1E45DED300FE82AB /* ShowPostListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPostListUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93CB11E44F96E007F16A8 /* ShowUserListUseCase.swift */,
+				76E19FCF1E45DED300FE82AB /* ShowPostListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
 				76E19FCC1E45DB7100FE82AB /* Post.swift in Sources */,
 				76B93CAF1E44F71A007F16A8 /* UseCaseFactory.swift in Sources */,
+				76E19FD01E45DED300FE82AB /* ShowPostListUseCase.swift in Sources */,
 				76E19FCA1E45D01200FE82AB /* LoadingView.swift in Sources */,
 				76E19FA41E45024600FE82AB /* UserTableViewCell.swift in Sources */,
 				76B93CA51E44EC6F007F16A8 /* InMemoryRepository.swift in Sources */,

@@ -30,7 +30,7 @@ class InMemoryRepository: EntityGateway {
         completion(users)
     }
     
-    func getPosts(forUserWithId id: Int, completion: @escaping ([Post]) -> Void) {
+    func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void) {
         completion(posts.filter({ $0.id == id }))
     }
     
