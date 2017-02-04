@@ -29,7 +29,7 @@ class UserDetailsPresenter {
     // MARK: - Public
     
     func viewReady() {
-        
+        view?.refresh()
     }
     
 }

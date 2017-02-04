@@ -16,6 +16,7 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
         tableView.rowHeight = 80.0
         tableView.tableFooterView = UIView()
         tableView.backgroundView = LoadingView()
+        tableView.allowsSelection = false
         return tableView
     }()
     
@@ -54,7 +55,7 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     
     func setupAutolayout() {
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
@@ -75,5 +76,14 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Title"
+    }
+    
     // MARK: - UserDetailsView
+    
+    func refresh() {
+        tableView.reloadData()
+        tableView.backgroundView = nil
+    }
 }
