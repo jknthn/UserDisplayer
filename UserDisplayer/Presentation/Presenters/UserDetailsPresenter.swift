@@ -29,6 +29,8 @@ class UserDetailsPresenter {
     // MARK: - Public
     
     func viewReady() {
+        view?.update(nameLabel: "Real name: \(user.name)")
+        view?.update(idLabel: "User ID: \(user.id)")
         view?.refresh()
     }
     

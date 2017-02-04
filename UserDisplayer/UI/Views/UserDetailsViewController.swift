@@ -20,6 +20,28 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
         return tableView
     }()
     
+    private let headerStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        return stackView
+    }()
+    
+    private let nameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private let idLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        return label
+    }()
+    
     private let connector: UserDetailsConnector
     private let presenter: UserDetailsPresenter
     
@@ -39,6 +61,7 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupStackViews()
         setupTableView()
         setupAutolayout()
         view.backgroundColor = .white
@@ -48,6 +71,12 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     
     // MARK: - Private
     
+    func setupStackViews() {
+        view.addSubview(headerStackView)
+        headerStackView.addArrangedSubview(nameLabel)
+        headerStackView.addArrangedSubview(idLabel)
+    }
+    
     func setupTableView() {
         view.addSubview(tableView)
         tableView.dataSource = self
@@ -55,7 +84,12 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     
     func setupAutolayout() {
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            headerStackView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 8.0),
+            headerStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16.0),
+            headerStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16.0),
+            headerStackView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1),
+            
+            tableView.topAnchor.constraint(equalTo: headerStackView.bottomAnchor, constant: 8.0),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
@@ -85,5 +119,13 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     func refresh() {
         tableView.reloadData()
         tableView.backgroundView = nil
+    }
+    
+    func update(nameLabel text: String) {
+        nameLabel.text = text
+    }
+    
+    func update(idLabel text: String) {
+        idLabel.text = text
     }
 }

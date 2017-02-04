@@ -9,5 +9,7 @@
 import Foundation
 
 protocol UserDetailsView: class {
+    func update(nameLabel text: String)
+    func update(idLabel text: String)
     func refresh()
 }
