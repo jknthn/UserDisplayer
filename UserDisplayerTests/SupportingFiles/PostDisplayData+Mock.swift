@@ -11,17 +11,11 @@ import Foundation
 
 extension PostDisplayData {
     
-    static var user1MockPosts: [PostDisplayData] {
-        return [
-            PostDisplayData(id: 1, userName: "John123", title: "Post 1", body: "This is test body of a post 1"),
-            PostDisplayData(id: 2, userName: "John123", title: "Post 2", body: "This is test body of a post 2")
-        ]
+    static var user1MockPost1: PostDisplayData {
+        return PostDisplayData(id: 1, userName: "John123", title: "Post 1", body: "This is test body of a post 1")
     }
     
-    static var user2MockPosts: [PostDisplayData] {
-        return [
-            PostDisplayData(id: 3, userName: "jane_a", title: "Post 3", body: "This is test body of a post 3"),
-            PostDisplayData(id: 4, userName: "jane_a", title: "Post 4", body: "This is test body of a post 4"),
-        ]
+    static var user1MockPost2: PostDisplayData {
+        return PostDisplayData(id: 2, userName: "John123", title: "Post 2", body: "This is test body of a post 2")
     }
 }

@@ -35,6 +35,7 @@
 		76E19FD01E45DED300FE82AB /* ShowPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCF1E45DED300FE82AB /* ShowPostListUseCase.swift */; };
 		76E19FD21E45EECE00FE82AB /* Post+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD11E45EECE00FE82AB /* Post+Mock.swift */; };
 		76E19FD61E45EF6D00FE82AB /* PostDisplayData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD51E45EF6D00FE82AB /* PostDisplayData+Mock.swift */; };
+		76E19FD81E45F01B00FE82AB /* ShowPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD71E45F01B00FE82AB /* ShowPostListUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		76E19FCF1E45DED300FE82AB /* ShowPostListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPostListUseCase.swift; sourceTree = "<group>"; };
 		76E19FD11E45EECE00FE82AB /* Post+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+Mock.swift"; sourceTree = "<group>"; };
 		76E19FD51E45EF6D00FE82AB /* PostDisplayData+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostDisplayData+Mock.swift"; sourceTree = "<group>"; };
+		76E19FD71E45F01B00FE82AB /* ShowPostListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPostListUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				76E19FBC1E450DF200FE82AB /* ShowUserListUseCaseTests.swift */,
+				76E19FD71E45F01B00FE82AB /* ShowPostListUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E19FD81E45F01B00FE82AB /* ShowPostListUseCase.swift in Sources */,
 				76E19FC81E45174800FE82AB /* UserListPresenterTests.swift in Sources */,
 				76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */,
 				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,
