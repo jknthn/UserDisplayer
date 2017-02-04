@@ -8,11 +8,6 @@
 
 import UIKit
 
-protocol UserCell {
-    func update(title: String)
-    func update(subtitle: String)
-}
-
 class UserTableViewCell: UITableViewCell, UserCell {
     
     private let stackView: UIStackView = {

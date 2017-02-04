@@ -65,7 +65,7 @@ class UserListViewController: UITableViewController, UserListView {
     }
     
     func showPosts(forUser user: UserDisplayData) {
-        
+        connector.navigateToPostList(forUser: user, fromView: self)
     }
     
 }
