@@ -33,6 +33,8 @@
 		76E19FCC1E45DB7100FE82AB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCB1E45DB7100FE82AB /* Post.swift */; };
 		76E19FCE1E45DC8900FE82AB /* PostDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCD1E45DC8900FE82AB /* PostDisplayData.swift */; };
 		76E19FD01E45DED300FE82AB /* ShowPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCF1E45DED300FE82AB /* ShowPostListUseCase.swift */; };
+		76E19FD21E45EECE00FE82AB /* Post+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD11E45EECE00FE82AB /* Post+Mock.swift */; };
+		76E19FD61E45EF6D00FE82AB /* PostDisplayData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD51E45EF6D00FE82AB /* PostDisplayData+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		76E19FCB1E45DB7100FE82AB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		76E19FCD1E45DC8900FE82AB /* PostDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDisplayData.swift; sourceTree = "<group>"; };
 		76E19FCF1E45DED300FE82AB /* ShowPostListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPostListUseCase.swift; sourceTree = "<group>"; };
+		76E19FD11E45EECE00FE82AB /* Post+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+Mock.swift"; sourceTree = "<group>"; };
+		76E19FD51E45EF6D00FE82AB /* PostDisplayData+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostDisplayData+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +282,8 @@
 				76E19FB01E4508D500FE82AB /* Info.plist */,
 				76E19FC11E45147800FE82AB /* User+Mock.swift */,
 				76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */,
+				76E19FD11E45EECE00FE82AB /* Post+Mock.swift */,
+				76E19FD51E45EF6D00FE82AB /* PostDisplayData+Mock.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -459,6 +465,8 @@
 				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,
 				76E19FC21E45147800FE82AB /* User+Mock.swift in Sources */,
 				76E19FBD1E450DF200FE82AB /* ShowUserListUseCaseTests.swift in Sources */,
+				76E19FD61E45EF6D00FE82AB /* PostDisplayData+Mock.swift in Sources */,
+				76E19FD21E45EECE00FE82AB /* Post+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
