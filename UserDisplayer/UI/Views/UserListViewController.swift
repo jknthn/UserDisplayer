@@ -49,12 +49,14 @@ class UserListViewController: UITableViewController, UserListView {
         tableView.registerCellsWithClass(UserTableViewCell.self)
         tableView.rowHeight = 80.0
         tableView.tableFooterView = UIView()
+        tableView.backgroundView = LoadingView()
     }
     
     // MARK: - UserListView
     
     func refresh() {
         tableView.reloadData()
+        tableView.backgroundView = nil
     }
     
 }
