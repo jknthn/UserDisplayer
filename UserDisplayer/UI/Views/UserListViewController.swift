@@ -64,7 +64,7 @@ class UserListViewController: UITableViewController, UserListView {
         tableView.backgroundView = nil
     }
     
-    func showPosts(forUser user: Int) {
+    func showPosts(forUser user: UserDisplayData) {
         
     }
     

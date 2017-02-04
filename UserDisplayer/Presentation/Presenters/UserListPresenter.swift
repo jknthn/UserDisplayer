@@ -40,6 +40,6 @@ class UserListPresenter {
     }
     
     func selectCell(at row: Int) {
-        view?.showPosts(forUser: users[row].id)
+        view?.showPosts(forUser: users[row])
     }
 }
