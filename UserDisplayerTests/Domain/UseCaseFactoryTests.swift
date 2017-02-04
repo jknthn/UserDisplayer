@@ -44,6 +44,19 @@ class UseCaseFactoryTests: XCTestCase {
         XCTAssertTrue(closureWasInvoked)
     }
     
+    func testFactoryCreatesShowPostListUseCase() {
+        let useCase = useCaseFactory.create(useCase: .showPostList(user: UserDisplayData.mock1, completion: { _ in }))
+        XCTAssertNotNil(useCase as? ShowPostListUseCase)
+    }
+    
+    func testShowPostListClosureInvoked() {
+        let useCase = useCaseFactory.create(useCase: .showPostList(user: UserDisplayData.mock1, completion: { _ in
+            self.closureWasInvoked = true
+        }))
+        useCase.execute()
+        XCTAssertTrue(closureWasInvoked)
+    }
+    
     // MARK: - Mocks
     
     class EntityGatewayMock: EntityGateway {
