@@ -29,7 +29,7 @@ class UserDetailsViewController: UITableViewController, UserDetailsView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Posts"
+        title = presenter.title
         setupTableView()
         presenter.viewReady()
     }

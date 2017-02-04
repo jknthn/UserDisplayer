@@ -12,12 +12,18 @@ class UserDetailsPresenter {
     
     weak var view: UserDetailsView?
     
+    var title: String {
+        return "\(user.userName) Profile"
+    }
+    
     private let useCaseFactory: UseCaseFactory
+    private let user: UserDisplayData
     
     // MARK: - Initialization
     
-    init(useCaseFactory: UseCaseFactory) {
+    init(user: UserDisplayData, useCaseFactory: UseCaseFactory) {
         self.useCaseFactory = useCaseFactory
+        self.user = user
     }
     
     // MARK: - Public

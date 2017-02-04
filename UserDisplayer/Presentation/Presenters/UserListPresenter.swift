@@ -16,6 +16,10 @@ class UserListPresenter {
         return users.count
     }
     
+    var title: String {
+        return "Posts"
+    }
+    
     private let useCaseFactory: UseCaseFactory
     private var users = [UserDisplayData]()
     

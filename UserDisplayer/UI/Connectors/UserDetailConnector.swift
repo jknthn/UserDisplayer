@@ -24,7 +24,7 @@ class UserDetailsConnector: Connector {
     
     func createInitialController() -> UIViewController {
         let factory = UseCaseFactory(entityGateway: entityGateway)
-        let presenter = UserDetailsPresenter(useCaseFactory: factory)
+        let presenter = UserDetailsPresenter(user: user, useCaseFactory: factory)
         let viewController = UserDetailsViewController(presenter: presenter, connector: self)
         presenter.view = viewController
         return viewController
