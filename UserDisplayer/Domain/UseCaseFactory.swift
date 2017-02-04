@@ -14,6 +14,7 @@ class UseCaseFactory {
     
     enum Use {
         case showUserList(completion: ShowUserListCompletion)
+        case showPostList(user: UserDisplayData, completion: ShowPostListCompletion)
     }
     
     // MARK: - Initialization
@@ -28,6 +29,8 @@ class UseCaseFactory {
         switch useCase {
         case .showUserList(let completion):
             return ShowUserListUseCase(entityGateway: entityGateway, completion: completion)
+        case .showPostList(let user, let completion):
+            return ShowPostListUseCase(user: user, entityGateway: entityGateway, completion: completion)
         }
     }
 
