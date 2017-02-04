@@ -88,7 +88,7 @@ class UserListPresenterTests: XCTestCase {
     class EntityGatewayMock: EntityGateway {
         
         func getUsers(completion: @escaping ([User]) -> Void) { }
-        func getPosts(forUserWithId id: Int, completion: @escaping ([Post]) -> Void) { }
+        func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void) { }
     }
     
     class UseCaseFactoryMock: UseCaseFactory {
@@ -102,6 +102,8 @@ class UserListPresenterTests: XCTestCase {
                 self.useCase = ShowUserListUseCaseMock(completion: completion)
                 self.useCase.data = data
                 return self.useCase
+            default:
+                return super.create(useCase: useCase)
             }
         }
         

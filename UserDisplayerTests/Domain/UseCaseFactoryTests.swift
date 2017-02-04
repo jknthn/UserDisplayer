@@ -52,7 +52,7 @@ class UseCaseFactoryTests: XCTestCase {
             completion([])
         }
         
-        func getPosts(forUserWithId id: Int, completion: @escaping ([Post]) -> Void) {
+        func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void) {
             completion([])
         }
 
