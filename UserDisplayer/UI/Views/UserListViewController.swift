@@ -43,6 +43,11 @@ class UserListViewController: UITableViewController, UserListView {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        presenter.selectCell(at: indexPath.row)
+    }
+    
     // MARK: - Private
     
     func setupTableView() {
@@ -57,6 +62,10 @@ class UserListViewController: UITableViewController, UserListView {
     func refresh() {
         tableView.reloadData()
         tableView.backgroundView = nil
+    }
+    
+    func showPosts(forUser user: Int) {
+        
     }
     
 }

@@ -38,4 +38,8 @@ class UserListPresenter {
         cell.update(title: users[row].name)
         cell.update(subtitle: users[row].userName)
     }
+    
+    func selectCell(at row: Int) {
+        view?.showPosts(forUser: users[row].id)
+    }
 }

@@ -61,6 +61,13 @@ class UserListPresenterTests: XCTestCase {
         XCTAssertEqual(UserDisplayData.mock1.userName, cell.subtitle)
     }
     
+    func testSelectCellInvokesShowPosts() {
+        useCaseFactory.data = [UserDisplayData.mock1]
+        presenter.viewReady()
+        presenter.selectCell(at: 0)
+        XCTAssertTrue(view.showPostsWasInvoked)
+    }
+    
     
     // MARK: - Mocks
     
@@ -118,9 +125,14 @@ class UserListPresenterTests: XCTestCase {
     class UserListViewMock: UserListView {
         
         var refreshWasInvoked = false
+        var showPostsWasInvoked = false
         
         func refresh() {
             refreshWasInvoked = true
+        }
+        
+        func showPosts(forUser user: Int) {
+            showPostsWasInvoked = true
         }
     }
     

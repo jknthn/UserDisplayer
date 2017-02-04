@@ -10,4 +10,5 @@ import Foundation
 
 protocol UserListView: class {
     func refresh()
+    func showPosts(forUser user: Int)
 }
