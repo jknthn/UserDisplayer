@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol PostListView: class {
+protocol UserDetailsView: class {
     
 }

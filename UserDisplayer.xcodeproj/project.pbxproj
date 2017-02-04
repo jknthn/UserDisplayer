@@ -36,10 +36,10 @@
 		76E19FD21E45EECE00FE82AB /* Post+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD11E45EECE00FE82AB /* Post+Mock.swift */; };
 		76E19FD61E45EF6D00FE82AB /* PostDisplayData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD51E45EF6D00FE82AB /* PostDisplayData+Mock.swift */; };
 		76E19FD81E45F01B00FE82AB /* ShowPostListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD71E45F01B00FE82AB /* ShowPostListUseCase.swift */; };
-		76E19FDA1E45F3A200FE82AB /* PostListConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD91E45F3A200FE82AB /* PostListConnector.swift */; };
-		76E19FDC1E45F43400FE82AB /* PostListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FDB1E45F43400FE82AB /* PostListPresenter.swift */; };
-		76E19FDE1E45F45B00FE82AB /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FDD1E45F45B00FE82AB /* PostListView.swift */; };
-		76E19FE01E45F4EC00FE82AB /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FDF1E45F4EC00FE82AB /* PostListViewController.swift */; };
+		76E19FDA1E45F3A200FE82AB /* UserDetailConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FD91E45F3A200FE82AB /* UserDetailConnector.swift */; };
+		76E19FDC1E45F43400FE82AB /* UserDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FDB1E45F43400FE82AB /* UserDetailsPresenter.swift */; };
+		76E19FDE1E45F45B00FE82AB /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FDD1E45F45B00FE82AB /* UserDetailsView.swift */; };
+		76E19FE01E45F4EC00FE82AB /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FDF1E45F4EC00FE82AB /* UserDetailsViewController.swift */; };
 		76E19FE21E45F52C00FE82AB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE11E45F52C00FE82AB /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,10 +87,10 @@
 		76E19FD11E45EECE00FE82AB /* Post+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+Mock.swift"; sourceTree = "<group>"; };
 		76E19FD51E45EF6D00FE82AB /* PostDisplayData+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostDisplayData+Mock.swift"; sourceTree = "<group>"; };
 		76E19FD71E45F01B00FE82AB /* ShowPostListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPostListUseCase.swift; sourceTree = "<group>"; };
-		76E19FD91E45F3A200FE82AB /* PostListConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListConnector.swift; sourceTree = "<group>"; };
-		76E19FDB1E45F43400FE82AB /* PostListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListPresenter.swift; sourceTree = "<group>"; };
-		76E19FDD1E45F45B00FE82AB /* PostListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
-		76E19FDF1E45F4EC00FE82AB /* PostListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		76E19FD91E45F3A200FE82AB /* UserDetailConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailConnector.swift; sourceTree = "<group>"; };
+		76E19FDB1E45F43400FE82AB /* UserDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsPresenter.swift; sourceTree = "<group>"; };
+		76E19FDD1E45F45B00FE82AB /* UserDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		76E19FDF1E45F4EC00FE82AB /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		76E19FE11E45F52C00FE82AB /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93C721E43A2F3007F16A8 /* UserListConnector.swift */,
-				76E19FD91E45F3A200FE82AB /* PostListConnector.swift */,
+				76E19FD91E45F3A200FE82AB /* UserDetailConnector.swift */,
 			);
 			path = Connectors;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93C701E43A2E9007F16A8 /* UserListViewController.swift */,
-				76E19FDF1E45F4EC00FE82AB /* PostListViewController.swift */,
+				76E19FDF1E45F4EC00FE82AB /* UserDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93C741E43A303007F16A8 /* UserListPresenter.swift */,
-				76E19FDB1E45F43400FE82AB /* PostListPresenter.swift */,
+				76E19FDB1E45F43400FE82AB /* UserDetailsPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93C761E43A30C007F16A8 /* UserListView.swift */,
-				76E19FDD1E45F45B00FE82AB /* PostListView.swift */,
+				76E19FDD1E45F45B00FE82AB /* UserDetailsView.swift */,
 				76E19FE11E45F52C00FE82AB /* UserCell.swift */,
 			);
 			path = ViewProtocols;
@@ -453,10 +453,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E19FC01E4510CD00FE82AB /* UserDisplayData.swift in Sources */,
-				76E19FE01E45F4EC00FE82AB /* PostListViewController.swift in Sources */,
+				76E19FE01E45F4EC00FE82AB /* UserDetailsViewController.swift in Sources */,
 				76B93C731E43A2F3007F16A8 /* UserListConnector.swift in Sources */,
 				76E19FCE1E45DC8900FE82AB /* PostDisplayData.swift in Sources */,
-				76E19FDA1E45F3A200FE82AB /* PostListConnector.swift in Sources */,
+				76E19FDA1E45F3A200FE82AB /* UserDetailConnector.swift in Sources */,
 				76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */,
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
 				76E19FCC1E45DB7100FE82AB /* Post.swift in Sources */,
@@ -468,9 +468,9 @@
 				76B93CA51E44EC6F007F16A8 /* InMemoryRepository.swift in Sources */,
 				76B93CB21E44F96E007F16A8 /* ShowUserListUseCase.swift in Sources */,
 				76E19FA71E45034500FE82AB /* ReusableIdentifier.swift in Sources */,
-				76E19FDC1E45F43400FE82AB /* PostListPresenter.swift in Sources */,
+				76E19FDC1E45F43400FE82AB /* UserDetailsPresenter.swift in Sources */,
 				76B93C751E43A303007F16A8 /* UserListPresenter.swift in Sources */,
-				76E19FDE1E45F45B00FE82AB /* PostListView.swift in Sources */,
+				76E19FDE1E45F45B00FE82AB /* UserDetailsView.swift in Sources */,
 				76B93CAD1E44F3D5007F16A8 /* UseCase.swift in Sources */,
 				76B93CAB1E44EDDC007F16A8 /* User.swift in Sources */,
 				76B93C711E43A2E9007F16A8 /* UserListViewController.swift in Sources */,

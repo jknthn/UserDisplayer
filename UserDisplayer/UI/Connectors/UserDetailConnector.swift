@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PostListConnector: Connector {
+class UserDetailsConnector: Connector {
     
     private let entityGateway: EntityGateway
     private let user: UserDisplayData
@@ -24,8 +24,8 @@ class PostListConnector: Connector {
     
     func createInitialController() -> UIViewController {
         let factory = UseCaseFactory(entityGateway: entityGateway)
-        let presenter = PostListPresenter(useCaseFactory: factory)
-        let viewController = PostListViewController(presenter: presenter, connector: self)
+        let presenter = UserDetailsPresenter(useCaseFactory: factory)
+        let viewController = UserDetailsViewController(presenter: presenter, connector: self)
         presenter.view = viewController
         return viewController
     }

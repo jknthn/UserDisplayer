@@ -29,6 +29,7 @@ class UserListViewController: UITableViewController, UserListView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Users"
         setupTableView()
         presenter.viewReady()
     }

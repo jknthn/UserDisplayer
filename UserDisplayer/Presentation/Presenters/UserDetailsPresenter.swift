@@ -8,9 +8,9 @@
 
 import Foundation
 
-class PostListPresenter {
+class UserDetailsPresenter {
     
-    weak var view: PostListView?
+    weak var view: UserDetailsView?
     
     private let useCaseFactory: UseCaseFactory
     
@@ -18,6 +18,12 @@ class PostListPresenter {
     
     init(useCaseFactory: UseCaseFactory) {
         self.useCaseFactory = useCaseFactory
+    }
+    
+    // MARK: - Public
+    
+    func viewReady() {
+        
     }
     
 }
