@@ -8,7 +8,16 @@
 
 import UIKit
 
-class UserDetailsViewController: UITableViewController, UserDetailsView {
+class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewDataSource {
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.rowHeight = 80.0
+        tableView.tableFooterView = UIView()
+        tableView.backgroundView = LoadingView()
+        return tableView
+    }()
     
     private let connector: UserDetailsConnector
     private let presenter: UserDetailsPresenter
@@ -25,22 +34,45 @@ class UserDetailsViewController: UITableViewController, UserDetailsView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - UITableViewController
+    // MARK: - UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = presenter.title
         setupTableView()
+        setupAutolayout()
+        view.backgroundColor = .white
+        title = presenter.title
         presenter.viewReady()
     }
     
     // MARK: - Private
     
     func setupTableView() {
-        tableView.registerCellsWithClass(UserTableViewCell.self)
-        tableView.rowHeight = 80.0
-        tableView.tableFooterView = UIView()
-        tableView.backgroundView = LoadingView()
+        view.addSubview(tableView)
+        tableView.dataSource = self
+    }
+    
+    func setupAutolayout() {
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+    }
+    
+    // MARK: - UITableViewDataSource
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
     
     // MARK: - UserDetailsView
