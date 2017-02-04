@@ -30,6 +30,7 @@
 		76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */; };
 		76E19FC81E45174800FE82AB /* UserListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC71E45174800FE82AB /* UserListPresenterTests.swift */; };
 		76E19FCA1E45D01200FE82AB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FC91E45D01200FE82AB /* LoadingView.swift */; };
+		76E19FCC1E45DB7100FE82AB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FCB1E45DB7100FE82AB /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		76E19FC31E4514F200FE82AB /* UserDisplayData+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDisplayData+Mock.swift"; sourceTree = "<group>"; };
 		76E19FC71E45174800FE82AB /* UserListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListPresenterTests.swift; sourceTree = "<group>"; };
 		76E19FC91E45D01200FE82AB /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		76E19FCB1E45DB7100FE82AB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93CAA1E44EDDC007F16A8 /* User.swift */,
+				76E19FCB1E45DB7100FE82AB /* Post.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				76B93C731E43A2F3007F16A8 /* UserListConnector.swift in Sources */,
 				76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */,
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
+				76E19FCC1E45DB7100FE82AB /* Post.swift in Sources */,
 				76B93CAF1E44F71A007F16A8 /* UseCaseFactory.swift in Sources */,
 				76E19FCA1E45D01200FE82AB /* LoadingView.swift in Sources */,
 				76E19FA41E45024600FE82AB /* UserTableViewCell.swift in Sources */,
