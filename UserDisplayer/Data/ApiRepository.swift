@@ -19,11 +19,15 @@ class ApiRepository: EntityGateway {
     // MARK: - EntityGateway
     
     func getUsers(completion: @escaping (Result<[User], Error>) -> Void) {
-        
+        get(.users) { result in
+            completion(result)
+        }
     }
     
     func getPosts(forUserId id: Int, completion: @escaping (Result<[Post], Error>) -> Void) {
-        
+        get(.posts(userId: id)) { result in
+            completion(result)
+        }
     }
     
     // MARK: - Utility
