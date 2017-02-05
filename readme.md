@@ -16,7 +16,7 @@ This project is written with Clean Architecture principles I am really into. Her
 
 As I am really architecture focused programmer I am always happy to discuss such topics and would love to hear your opinion on it.
 
-## 3. Would improve in production
+## 3. To improve
 1. Use some reliable external libraries (eg. `PureLayout`, `SwiftyJSON`, etc.) to reduce boilerplate
 2. More Unit Tests
 3. Add `fastlane` for deployment
