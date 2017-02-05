@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     lazy var rootConnector: Connector = {
-        let repo = InMemoryRepository()
+        let repo = ApiRepository()
         let connector = UserListConnector(entityGateway: repo)
         return connector
     }()
