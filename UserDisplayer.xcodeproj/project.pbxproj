@@ -49,6 +49,7 @@
 		76E19FEF1E472D3800FE82AB /* ApiEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FEE1E472D3800FE82AB /* ApiEndpointTests.swift */; };
 		76E19FF11E472FDB00FE82AB /* JSONParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FF01E472FDB00FE82AB /* JSONParsable.swift */; };
 		76E19FF31E47333F00FE82AB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FF21E47333F00FE82AB /* Result.swift */; };
+		76E19FF51E473A0F00FE82AB /* UIViewController+NetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FF41E473A0F00FE82AB /* UIViewController+NetworkActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		76E19FEE1E472D3800FE82AB /* ApiEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
 		76E19FF01E472FDB00FE82AB /* JSONParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsable.swift; sourceTree = "<group>"; };
 		76E19FF21E47333F00FE82AB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		76E19FF41E473A0F00FE82AB /* UIViewController+NetworkActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NetworkActivityIndicator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				76B93CA11E44E991007F16A8 /* Connector.swift */,
+				76E19FF41E473A0F00FE82AB /* UIViewController+NetworkActivityIndicator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				76B93C731E43A2F3007F16A8 /* UserListConnector.swift in Sources */,
 				76E19FEC1E472CFA00FE82AB /* ApiEndpoint.swift in Sources */,
 				76E19FCE1E45DC8900FE82AB /* PostDisplayData.swift in Sources */,
+				76E19FF51E473A0F00FE82AB /* UIViewController+NetworkActivityIndicator.swift in Sources */,
 				76E19FDA1E45F3A200FE82AB /* UserDetailConnector.swift in Sources */,
 				76E19FF31E47333F00FE82AB /* Result.swift in Sources */,
 				76E19FF11E472FDB00FE82AB /* JSONParsable.swift in Sources */,

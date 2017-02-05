@@ -29,6 +29,7 @@ class UserListViewController: UITableViewController, UserListView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showNetworkActivityIndicator()
         setupTableView()
         title = presenter.title
         presenter.viewReady()
@@ -63,6 +64,7 @@ class UserListViewController: UITableViewController, UserListView {
     func refresh() {
         tableView.reloadData()
         tableView.backgroundView = nil
+        hideNetworkActivityIndicator()
     }
     
     func showUserDetails(for user: UserDisplayData) {

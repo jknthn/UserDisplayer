@@ -63,6 +63,7 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showNetworkActivityIndicator()
         setupStackViews()
         setupTableView()
         setupAutolayout()
@@ -123,6 +124,7 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     func refresh() {
         tableView.reloadData()
         tableView.backgroundView = nil
+        hideNetworkActivityIndicator()
     }
     
     func update(nameLabel text: String) {
