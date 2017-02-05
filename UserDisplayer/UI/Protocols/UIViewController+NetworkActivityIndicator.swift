@@ -20,7 +20,7 @@ extension NetworkActivityDisplayer {
     }
     
     func hideNetworkActivityIndicator() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 }
 
