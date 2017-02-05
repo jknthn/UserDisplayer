@@ -52,6 +52,7 @@ class ApiRepository: EntityGateway {
                     completion(.error(ApiError.parse))
                 }
             }
-        }
+        }.resume()
     }
+    
 }
