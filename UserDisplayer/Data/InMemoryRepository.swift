@@ -11,6 +11,7 @@ import Foundation
 class InMemoryRepository: EntityGateway {
     
     // TODO: - For development purposes, delete after API implementation
+    // Left for development history
     
     private let users = [
         User(id: 1, name: "John Doe", userName: "Johnny02", email: "john@email.com"),
@@ -31,7 +32,7 @@ class InMemoryRepository: EntityGateway {
     }
     
     func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void) {
-        completion(posts.filter({ $0.id == id }))
+        completion(posts.filter({ $0.userId == id }))
     }
     
 }

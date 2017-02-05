@@ -21,18 +21,22 @@ class PostTableViewCell: UITableViewCell, PostCell {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
         return stackView
     }()
     
     private let idLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 10.0)
         return label
     }()
     
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.textAlignment = .center
         return label
     }()
     
@@ -40,6 +44,8 @@ class PostTableViewCell: UITableViewCell, PostCell {
     private let userLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 10.0)
+        label.textAlignment = .right
         return label
     }()
     
@@ -48,6 +54,7 @@ class PostTableViewCell: UITableViewCell, PostCell {
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.isScrollEnabled = false
         textView.isEditable = false
+        textView.font = UIFont.systemFont(ofSize: 14.0)
         return textView
     }()
     

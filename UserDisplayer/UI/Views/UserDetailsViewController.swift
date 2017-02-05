@@ -13,7 +13,9 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.rowHeight = 80.0
+        tableView.registerCellsWithClass(PostTableViewCell.self)
+        tableView.estimatedRowHeight = 80.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
         tableView.backgroundView = LoadingView()
         tableView.allowsSelection = false
@@ -99,19 +101,21 @@ class UserDetailsViewController: UIViewController, UserDetailsView, UITableViewD
     // MARK: - UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return presenter.numberOfSections
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return presenter.numberOfRows(for: section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier, for: indexPath) as! PostTableViewCell
+        presenter.setupCell(cell: cell, at: indexPath.row)
+        return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Title"
+        return presenter.headerTitle(for: section)
     }
     
     // MARK: - UserDetailsView
