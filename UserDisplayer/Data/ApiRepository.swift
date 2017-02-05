@@ -10,9 +10,6 @@ import Foundation
 
 class ApiRepository: EntityGateway {
     
-    
-
-    
     // MARK: - EntityGateway
     
     func getUsers(completion: @escaping ([User]) -> Void) {
@@ -24,4 +21,8 @@ class ApiRepository: EntityGateway {
     }
     
     // MARK: - Utility
+    
+    private func get<T>(_ endpoint: ApiEndpoint, completion: @escaping ([T]) -> Void) {
+        
+    }
 }
