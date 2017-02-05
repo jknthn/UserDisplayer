@@ -61,12 +61,12 @@ class UseCaseFactoryTests: XCTestCase {
     
     class EntityGatewayMock: EntityGateway {
         
-        func getUsers(completion: @escaping ([User]) -> Void) {
-            completion([])
+        func getUsers(completion: @escaping (Result<[User], Error>) -> Void) {
+            completion(.success([]))
         }
         
-        func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void) {
-            completion([])
+        func getPosts(forUserId id: Int, completion: @escaping (Result<[Post], Error>) -> Void) {
+            completion(.success([]))
         }
 
     }

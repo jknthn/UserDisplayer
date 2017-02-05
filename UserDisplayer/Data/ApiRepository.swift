@@ -29,6 +29,7 @@ class ApiRepository: EntityGateway {
     // MARK: - Utility
     
     private func get<T: JSONParsable>(_ endpoint: ApiEndpoint, completion: @escaping (Result<[T], Error>) -> Void) {
+        
         URLSession.shared.dataTask(with: endpoint.url) { data, response, error in
             if let _ = error {
                 completion(.error(ApiError.network))

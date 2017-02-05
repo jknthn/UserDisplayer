@@ -60,10 +60,10 @@ class ShowUserListUseCaseTests: XCTestCase {
         
         var users = [User]()
         
-        func getUsers(completion: @escaping ([User]) -> Void) {
-            completion(users)
+        func getUsers(completion: @escaping (Result<[User], Error>) -> Void) {
+            completion(.success(users))
         }
         
-        func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void) { }
+        func getPosts(forUserId id: Int, completion: @escaping (Result<[Post], Error>) -> Void) { }
     }
 }
