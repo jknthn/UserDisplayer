@@ -9,5 +9,8 @@
 import Foundation
 
 protocol PostCell {
-    
+    func update(id: String)
+    func update(title: String)
+    func update(body: String)
+    func update(user: String)
 }
