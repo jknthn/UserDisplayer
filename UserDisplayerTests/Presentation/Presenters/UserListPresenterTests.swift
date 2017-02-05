@@ -65,7 +65,7 @@ class UserListPresenterTests: XCTestCase {
         useCaseFactory.data = [UserDisplayData.mock1]
         presenter.viewReady()
         presenter.selectCell(at: 0)
-        XCTAssertTrue(view.showPostsWasInvoked)
+        XCTAssertTrue(view.showDetailsWasInvoked)
     }
     
     
@@ -128,14 +128,14 @@ class UserListPresenterTests: XCTestCase {
     class UserListViewMock: UserListView {
         
         var refreshWasInvoked = false
-        var showPostsWasInvoked = false
+        var showDetailsWasInvoked = false
         
         func refresh() {
             refreshWasInvoked = true
         }
         
-        func showPosts(forUser user: UserDisplayData) {
-            showPostsWasInvoked = true
+        func showUserDetails(for user: UserDisplayData) {
+            showDetailsWasInvoked = true
         }
     }
     

@@ -31,7 +31,7 @@ class UserListConnector: Connector {
     
     // MARK: - Public
     
-    func navigateToPostList(forUser user: UserDisplayData, fromView view: UserListViewController) {
+    func navigateToUserDetails(for user: UserDisplayData, fromView view: UserListViewController) {
         let postListConnector = UserDetailsConnector(entityGateway: entityGateway, user: user)
         let viewController = postListConnector.createInitialController()
         view.navigationController?.pushViewController(viewController, animated: true)

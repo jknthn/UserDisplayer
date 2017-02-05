@@ -65,8 +65,8 @@ class UserListViewController: UITableViewController, UserListView {
         tableView.backgroundView = nil
     }
     
-    func showPosts(forUser user: UserDisplayData) {
-        connector.navigateToPostList(forUser: user, fromView: self)
+    func showUserDetails(for user: UserDisplayData) {
+        connector.navigateToUserDetails(for: user, fromView: self)
     }
     
 }

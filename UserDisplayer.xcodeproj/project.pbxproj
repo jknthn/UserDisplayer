@@ -43,6 +43,7 @@
 		76E19FE21E45F52C00FE82AB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE11E45F52C00FE82AB /* UserCell.swift */; };
 		76E19FE41E4692F200FE82AB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE31E4692F200FE82AB /* PostTableViewCell.swift */; };
 		76E19FE61E4692FE00FE82AB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE51E4692FE00FE82AB /* PostCell.swift */; };
+		76E19FE81E47171800FE82AB /* UserDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		76E19FE11E45F52C00FE82AB /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		76E19FE31E4692F200FE82AB /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		76E19FE51E4692FE00FE82AB /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				76E19FC71E45174800FE82AB /* UserListPresenterTests.swift */,
+				76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */,
 				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,
 				76E19FC21E45147800FE82AB /* User+Mock.swift in Sources */,
+				76E19FE81E47171800FE82AB /* UserDetailsPresenterTests.swift in Sources */,
 				76E19FBD1E450DF200FE82AB /* ShowUserListUseCaseTests.swift in Sources */,
 				76E19FD61E45EF6D00FE82AB /* PostDisplayData+Mock.swift in Sources */,
 				76E19FD21E45EECE00FE82AB /* Post+Mock.swift in Sources */,
