@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Post: Equatable {
+struct Post: Equatable, JSONParsable {
     
     let userId: Int
     let id: Int
@@ -23,5 +23,11 @@ struct Post: Equatable {
         if lhs.title != rhs.title { return false }
         if lhs.body != rhs.body { return false }
         return true
+    }
+    
+    // MARK: - JSONParsable
+    
+    func fromJSON(json: JSONDictionary) -> Post? {
+        return nil
     }
 }

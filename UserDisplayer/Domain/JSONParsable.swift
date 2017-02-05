@@ -12,5 +12,4 @@ typealias JSONDictionary = [String: Any]
 
 protocol JSONParsable {
     func fromJSON(json: JSONDictionary) -> Self?
-    func toJSON(object: Self) -> JSONDictionary?
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct User: Equatable {
+struct User: Equatable, JSONParsable {
     
     let id: Int
     let name: String
@@ -24,4 +24,11 @@ struct User: Equatable {
         if lhs.email != rhs.email { return false }
         return true
     }
+    
+    // MARK: - JSONParsable
+    
+    func fromJSON(json: JSONDictionary) -> User? {
+        return nil
+    }
+    
 }
