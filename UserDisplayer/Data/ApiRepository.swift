@@ -31,24 +31,21 @@ class ApiRepository: EntityGateway {
     private func get<T: JSONParsable>(_ endpoint: ApiEndpoint, completion: @escaping (Result<[T], Error>) -> Void) {
         URLSession.shared.dataTask(with: endpoint.url) { data, response, error in
             if let _ = error {
-                // TODO: - Handle error
-                assertionFailure("API Error")
+                completion(.error(ApiError.network))
             }
-            
-            do {
-                guard
-                    let data = data,
-                    let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [[JSONDictionary]]
-                else {
-                    // TODO: - Handle error
-                    assertionFailure("Parse Error")
-                }
-                DispatchQueue.main.async {
+            DispatchQueue.main.async {
+                do {
+                    guard
+                        let data = data,
+                        let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [JSONDictionary]
+                    else {
+                        completion(.error(ApiError.parse))
+                        return
+                    }
                     completion(.success(json.flatMap(T.fromJSON)))
+                } catch {
+                    completion(.error(ApiError.parse))
                 }
-            } catch {
-                // TODO: - Handle error
-                assertionFailure("Parse Error")
             }
         }
     }

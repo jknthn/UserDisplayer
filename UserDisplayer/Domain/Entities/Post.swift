@@ -27,7 +27,7 @@ struct Post: Equatable, JSONParsable {
     
     // MARK: - JSONParsable
     
-    func fromJSON(json: JSONDictionary) -> Post? {
+    static func fromJSON(json: JSONDictionary) -> Post? {
         return nil
     }
 }

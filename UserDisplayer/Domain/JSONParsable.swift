@@ -11,5 +11,5 @@ import Foundation
 typealias JSONDictionary = [String: Any]
 
 protocol JSONParsable {
-    func fromJSON(json: JSONDictionary) -> Self?
+    static func fromJSON(json: JSONDictionary) -> Self?
 }

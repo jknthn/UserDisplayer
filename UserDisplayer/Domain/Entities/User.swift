@@ -27,7 +27,7 @@ struct User: Equatable, JSONParsable {
     
     // MARK: - JSONParsable
     
-    func fromJSON(json: JSONDictionary) -> User? {
+    static func fromJSON(json: JSONDictionary) -> User? {
         return nil
     }
     
