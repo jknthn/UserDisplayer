@@ -46,6 +46,7 @@
 		76E19FE81E47171800FE82AB /* UserDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */; };
 		76E19FEA1E472B5800FE82AB /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE91E472B5800FE82AB /* ApiRepository.swift */; };
 		76E19FEC1E472CFA00FE82AB /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FEB1E472CFA00FE82AB /* ApiEndpoint.swift */; };
+		76E19FEF1E472D3800FE82AB /* ApiEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FEE1E472D3800FE82AB /* ApiEndpointTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsPresenterTests.swift; sourceTree = "<group>"; };
 		76E19FE91E472B5800FE82AB /* ApiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
 		76E19FEB1E472CFA00FE82AB /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		76E19FEE1E472D3800FE82AB /* ApiEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +302,7 @@
 		76E19FAD1E4508D500FE82AB /* UserDisplayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				76E19FED1E472D2E00FE82AB /* Data */,
 				76E19FB71E45097F00FE82AB /* Domain */,
 				76E19FC51E45171F00FE82AB /* Presentation */,
 				76E19FB61E4508EB00FE82AB /* SupportingFiles */,
@@ -361,6 +364,14 @@
 				76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		76E19FED1E472D2E00FE82AB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				76E19FEE1E472D3800FE82AB /* ApiEndpointTests.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E19FD81E45F01B00FE82AB /* ShowPostListUseCase.swift in Sources */,
+				76E19FEF1E472D3800FE82AB /* ApiEndpointTests.swift in Sources */,
 				76E19FC81E45174800FE82AB /* UserListPresenterTests.swift in Sources */,
 				76E19FC41E4514F200FE82AB /* UserDisplayData+Mock.swift in Sources */,
 				76E19FB91E45098C00FE82AB /* UseCaseFactoryTests.swift in Sources */,

@@ -14,7 +14,7 @@ enum ApiEndpoint {
     
     static let apiUrl = URL(string: "http://jsonplaceholder.typicode.com")!
     
-    var endpointUrl: URL {
+    var url: URL {
         switch self {
         case .users:
             return ApiEndpoint.apiUrl.appendingPathComponent("users")
