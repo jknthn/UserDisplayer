@@ -28,7 +28,15 @@ struct User: Equatable, JSONParsable {
     // MARK: - JSONParsable
     
     static func fromJSON(json: JSONDictionary) -> User? {
-        return nil
+        guard
+            let id = json["id"] as? Int,
+            let name = json["name"] as? String,
+            let userName = json["username"] as? String,
+            let email = json["email"] as? String
+        else {
+            return nil
+        }
+        return User(id: id, name: name, userName: userName, email: email)
     }
     
 }

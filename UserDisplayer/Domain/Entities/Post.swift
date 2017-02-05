@@ -28,6 +28,14 @@ struct Post: Equatable, JSONParsable {
     // MARK: - JSONParsable
     
     static func fromJSON(json: JSONDictionary) -> Post? {
-        return nil
+        guard
+            let userId = json["userId"] as? Int,
+            let id = json["id"] as? Int,
+            let title = json["title"] as? String,
+            let body = json["body"] as? String
+        else {
+            return nil
+        }
+        return Post(userId: userId, id: id, title: title, body: body)
     }
 }
