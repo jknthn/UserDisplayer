@@ -20,3 +20,4 @@ As I am really architecture focused programmer I am always happy to discuss such
 1. Use some reliable external libraries (eg. `PureLayout`, `SwiftyJSON`, etc.) to reduce boilerplate
 2. More Unit Tests
 3. Add `fastlane` for deployment
+4. Add proper error handling

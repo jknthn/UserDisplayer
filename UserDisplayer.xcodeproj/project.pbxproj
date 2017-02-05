@@ -44,6 +44,8 @@
 		76E19FE41E4692F200FE82AB /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE31E4692F200FE82AB /* PostTableViewCell.swift */; };
 		76E19FE61E4692FE00FE82AB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE51E4692FE00FE82AB /* PostCell.swift */; };
 		76E19FE81E47171800FE82AB /* UserDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */; };
+		76E19FEA1E472B5800FE82AB /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FE91E472B5800FE82AB /* ApiRepository.swift */; };
+		76E19FEC1E472CFA00FE82AB /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FEB1E472CFA00FE82AB /* ApiEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		76E19FE31E4692F200FE82AB /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		76E19FE51E4692FE00FE82AB /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		76E19FE71E47171800FE82AB /* UserDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		76E19FE91E472B5800FE82AB /* ApiRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		76E19FEB1E472CFA00FE82AB /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				76B93CA41E44EC6F007F16A8 /* InMemoryRepository.swift */,
+				76E19FE91E472B5800FE82AB /* ApiRepository.swift */,
+				76E19FEB1E472CFA00FE82AB /* ApiEndpoint.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 				76E19FC01E4510CD00FE82AB /* UserDisplayData.swift in Sources */,
 				76E19FE01E45F4EC00FE82AB /* UserDetailsViewController.swift in Sources */,
 				76B93C731E43A2F3007F16A8 /* UserListConnector.swift in Sources */,
+				76E19FEC1E472CFA00FE82AB /* ApiEndpoint.swift in Sources */,
 				76E19FCE1E45DC8900FE82AB /* PostDisplayData.swift in Sources */,
 				76E19FDA1E45F3A200FE82AB /* UserDetailConnector.swift in Sources */,
 				76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */,
@@ -478,6 +485,7 @@
 				76B93CB21E44F96E007F16A8 /* ShowUserListUseCase.swift in Sources */,
 				76E19FE61E4692FE00FE82AB /* PostCell.swift in Sources */,
 				76E19FA71E45034500FE82AB /* ReusableIdentifier.swift in Sources */,
+				76E19FEA1E472B5800FE82AB /* ApiRepository.swift in Sources */,
 				76E19FDC1E45F43400FE82AB /* UserDetailsPresenter.swift in Sources */,
 				76E19FE41E4692F200FE82AB /* PostTableViewCell.swift in Sources */,
 				76B93C751E43A303007F16A8 /* UserListPresenter.swift in Sources */,
