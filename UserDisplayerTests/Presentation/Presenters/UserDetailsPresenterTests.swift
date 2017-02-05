@@ -12,8 +12,61 @@ import XCTest
 class UserDetailsPresenterTests: XCTestCase {
     
     var presenter: UserDetailsPresenter!
-    
+    var view: UserDetailsViewMock!
+    var useCaseFactory: UseCaseFactoryMock!
     var data = [PostDisplayData]()
+    
+    // MARK: - XCTestCase
+    
+    override func setUp() {
+        super.setUp()
+        view = UserDetailsViewMock()
+        useCaseFactory = UseCaseFactoryMock(entityGateway: EntityGatewayMock())
+        presenter = UserDetailsPresenter(user: UserDisplayData.mock1, useCaseFactory: useCaseFactory)
+        presenter.view = view
+    }
+    
+    override func tearDown() {
+        presenter = nil
+        view = nil
+        useCaseFactory = nil
+        data = []
+        super.tearDown()
+    }
+    
+    // MARK: - Tests
+    
+    func testViewReadyInvokesUseCase() {
+        presenter.viewReady()
+        XCTAssertTrue(useCaseFactory.useCase.executeWasInvoked)
+    }
+    
+    func testViewReadyRefreshesView() {
+        presenter.viewReady()
+        XCTAssertTrue(view.refreshWasInvoked)
+    }
+    
+    func testCountProperNumberOfData() {
+        useCaseFactory.data = [PostDisplayData.user1MockPost1, PostDisplayData.user1MockPost2]
+        presenter.viewReady()
+        XCTAssertEqual(1, presenter.numberOfSections)
+        XCTAssertEqual(useCaseFactory.data.count, presenter.numberOfRows(for: 0))
+    }
+    
+    func testCellIsConfigured() {
+        let cell = PostCellMock()
+        useCaseFactory.data = [PostDisplayData.user1MockPost1]
+        presenter.viewReady()
+        presenter.setupCell(cell: cell, at: 0)
+        XCTAssertEqual(cell.title, PostDisplayData.user1MockPost1.title)
+        XCTAssertEqual(cell.id, "No: \(PostDisplayData.user1MockPost1.id)")
+        XCTAssertEqual(cell.user, PostDisplayData.user1MockPost1.userName)
+        XCTAssertEqual(cell.body, PostDisplayData.user1MockPost1.body)
+    }
+    
+    func testTitleString() {
+        XCTAssertEqual(presenter.title, "\(UserDisplayData.mock1.userName) Profile")
+    }
     
     // MARK: - Mocks
     
@@ -84,20 +137,13 @@ class UserDetailsPresenterTests: XCTestCase {
     class UserDetailsViewMock: UserDetailsView {
         
         var refreshWasInvoked = false
-        var id = ""
-        var name = ""
         
         func refresh() {
             refreshWasInvoked = true
         }
         
-        func update(idLabel text: String) {
-            id = text
-        }
-        
-        func update(nameLabel text: String) {
-            name = text
-        }
+        func update(idLabel text: String) { }
+        func update(nameLabel text: String) { }
     }
     
 }
