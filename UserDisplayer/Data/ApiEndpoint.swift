@@ -20,7 +20,10 @@ enum ApiEndpoint {
             return ApiEndpoint.apiUrl.appendingPathComponent("users")
         case .posts(let userId):
             if let userId = userId {
-                return ApiEndpoint.apiUrl.appendingPathComponent("posts/\(userId)")
+                var components = URLComponents(url: ApiEndpoint.apiUrl, resolvingAgainstBaseURL: true)!
+                components.path = "/posts"
+                components.query = "userId=\(userId)"
+                return components.url!
             } else {
                 return ApiEndpoint.apiUrl.appendingPathComponent("posts")
             }

@@ -27,6 +27,6 @@ class ApiEndpointTests: XCTestCase {
     
     func testPostsEndpointWithId() {
         let endpoint = ApiEndpoint.posts(userId: 1)
-        XCTAssertEqual(endpoint.url.absoluteString, apiBaseUrlString + "/posts/1")
+        XCTAssertEqual(endpoint.url.absoluteString, apiBaseUrlString + "/posts?userId=1")
     }
 }
