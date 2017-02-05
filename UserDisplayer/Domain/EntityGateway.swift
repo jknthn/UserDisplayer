@@ -9,6 +9,6 @@
 import Foundation
 
 protocol EntityGateway {
-    func getUsers(completion: @escaping ([User]) -> Void)
-    func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void)
+    func getUsers(completion: @escaping (Result<[User], Error>) -> Void)
+    func getPosts(forUserId id: Int, completion: @escaping (Result<[Post], Error>) -> Void)
 }

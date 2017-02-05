@@ -25,9 +25,14 @@ class ShowUserListUseCase: UseCase {
     // MARK: - UseCase
     
     func execute() {
-        entityGateway.getUsers { users in
-            let displayData = users.map { UserDisplayData(id: $0.id, name: $0.name, userName: $0.userName) }
-            self.completion(displayData)
+        entityGateway.getUsers { result in
+            result.onSuccess { users in
+                let displayData = users.map { UserDisplayData(id: $0.id, name: $0.name, userName: $0.userName) }
+                self.completion(displayData)
+            }
+            result.onError { _ in
+                assertionFailure("Error") // TODO: - Handle error
+            }
         }
     }
 }

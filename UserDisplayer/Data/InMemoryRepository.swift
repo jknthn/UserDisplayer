@@ -27,12 +27,12 @@ class InMemoryRepository: EntityGateway {
     
     // MARK: - EntityGateway
     
-    func getUsers(completion: @escaping ([User]) -> Void) {
-        completion(users)
+    func getUsers(completion: @escaping (Result<[User], Error>) -> Void) {
+        completion(Result.success(users))
     }
     
-    func getPosts(forUserId id: Int, completion: @escaping ([Post]) -> Void) {
-        completion(posts.filter({ $0.userId == id }))
+    func getPosts(forUserId id: Int, completion: @escaping (Result<[Post], Error>) -> Void) {
+        completion(Result.success(posts.filter({ $0.userId == id })))
     }
     
 }

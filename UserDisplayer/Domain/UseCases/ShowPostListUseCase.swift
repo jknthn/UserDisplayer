@@ -27,9 +27,14 @@ class ShowPostListUseCase: UseCase {
     // MARK: - UseCase
     
     func execute() {
-        entityGateway.getPosts(forUserId: user.id) { posts in
-            let displayData = posts.map { PostDisplayData(id: $0.id, userName: self.user.userName, title: $0.title, body: $0.body) }
-            self.completion(displayData)
+        entityGateway.getPosts(forUserId: user.id) { result in
+            result.onSuccess { posts in
+                let displayData = posts.map { PostDisplayData(id: $0.id, userName: self.user.userName, title: $0.title, body: $0.body) }
+                self.completion(displayData)
+            }
+            result.onError { _ in
+                assertionFailure("Error") // TODO: - Handle error
+            }
         }
     }
 }

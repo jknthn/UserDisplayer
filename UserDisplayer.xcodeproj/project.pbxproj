@@ -48,6 +48,7 @@
 		76E19FEC1E472CFA00FE82AB /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FEB1E472CFA00FE82AB /* ApiEndpoint.swift */; };
 		76E19FEF1E472D3800FE82AB /* ApiEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FEE1E472D3800FE82AB /* ApiEndpointTests.swift */; };
 		76E19FF11E472FDB00FE82AB /* JSONParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FF01E472FDB00FE82AB /* JSONParsable.swift */; };
+		76E19FF31E47333F00FE82AB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E19FF21E47333F00FE82AB /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		76E19FEB1E472CFA00FE82AB /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		76E19FEE1E472D3800FE82AB /* ApiEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpointTests.swift; sourceTree = "<group>"; };
 		76E19FF01E472FDB00FE82AB /* JSONParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParsable.swift; sourceTree = "<group>"; };
+		76E19FF21E47333F00FE82AB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				76B93CAC1E44F3D5007F16A8 /* UseCase.swift */,
 				76B93CAE1E44F71A007F16A8 /* UseCaseFactory.swift */,
 				76E19FF01E472FDB00FE82AB /* JSONParsable.swift */,
+				76E19FF21E47333F00FE82AB /* Result.swift */,
 				76E19FBE1E4510BD00FE82AB /* Aux */,
 				76B93CB01E44F961007F16A8 /* UseCases */,
 				76B93CA91E44EDD3007F16A8 /* Entities */,
@@ -487,6 +490,7 @@
 				76E19FEC1E472CFA00FE82AB /* ApiEndpoint.swift in Sources */,
 				76E19FCE1E45DC8900FE82AB /* PostDisplayData.swift in Sources */,
 				76E19FDA1E45F3A200FE82AB /* UserDetailConnector.swift in Sources */,
+				76E19FF31E47333F00FE82AB /* Result.swift in Sources */,
 				76E19FF11E472FDB00FE82AB /* JSONParsable.swift in Sources */,
 				76B93C771E43A30C007F16A8 /* UserListView.swift in Sources */,
 				76B93C541E439761007F16A8 /* AppDelegate.swift in Sources */,
